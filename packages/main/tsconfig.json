@@ -5,8 +5,11 @@
     "sourceMap": false,
     "moduleResolution": "Node",
     "skipLibCheck": true,
-    "strict": true,
+ //   "strict": true,
+    "noImplicitAny": false,
     "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react",
 
     "types" : ["node"],
 

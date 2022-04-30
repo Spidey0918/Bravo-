@@ -1,4 +1,4 @@
-import {contextBridge} from 'electron';
+import { contextBridge, ipcRenderer } from 'electron';
 
 /**
  * Typesafe wrapper for `electron.contextBridge.exposeInMainWorld`.
@@ -11,3 +11,9 @@ import {contextBridge} from 'electron';
 export function exposeInMainWorld<T extends keyof Exposed & string>(key: T, api: Exposed[T]) {
   return contextBridge.exposeInMainWorld(key, api);
 }
+contextBridge.exposeInMainWorld('electronAPI', {
+  saveFile: (title: string) => ipcRenderer.send('save', title),
+  handleText: (text) => ipcRenderer.on('open-file', text),
+})
+
+

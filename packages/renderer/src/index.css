@@ -1,0 +1,29 @@
+html, body { 
+   background-color: transparent;
+   height: 100%;
+
+}
+body {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", "Roboto", "Ubuntu", "Canterell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+   font-family: source-code-pre, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+section.controls {
+  display: flex;
+  gap: 2px;
+}
+
+button {
+  background-color: transparent;
+  color: #abb2bf; 
+}
+
+#root {
+  height : 100%;
+}

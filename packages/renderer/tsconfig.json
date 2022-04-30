@@ -3,10 +3,14 @@
     "module": "esnext",
     "target": "esnext",
     "sourceMap": false,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node",
     "skipLibCheck": true,
-    "strict": true,
+    // "strict": true,
+    "noImplicitAny":false,
     "isolatedModules": true,
+    "esModuleInterop" : true,
 
     "types" : ["node"],
     "baseUrl": ".",
@@ -19,7 +23,6 @@
   },
 
   "include": [
-    "src/**/*.vue",
     "src/**/*.ts",
     "src/**/*.tsx",
     "types/**/*.d.ts",

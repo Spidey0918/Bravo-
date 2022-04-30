@@ -1,0 +1,18 @@
+.app {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.editor {
+  height: 100%;
+  flex: 0 0 50%;
+}
+
+.preview {
+  height:100%;
+  flex: 0 0 50%;
+  overflow-x:hidden;
+}
+
