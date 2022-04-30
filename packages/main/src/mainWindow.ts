@@ -9,6 +9,7 @@ export async function createWindow() {
     height: 800,
     width: 1200,
     show: false, // Use 'ready-to-show' event to show window
+    frame: true,
     transparent: true,
     vibrancy: 'under-window',
     title: '🔴' + ' 未命名.md',
